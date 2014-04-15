@@ -1,12 +1,32 @@
-## The iterators lab 
+## Iterators Lab
 
-This lab builds on your implementation of SortedArray from [The Sorted Array Lab](https://github.com/wdi-sf-jan-2014/sorted_array). Make sure all your specs pass for that lab before starting on this one. The file [sorted_array_spec.rb](sorted_array_spec.rb) has some new specs that you need to satisfy. 
+This lab builds on an implementation of ```SortedArray```.  A ```SortedArray``` is an array that always maintains the sorted order of its elements.  Here is some example use of ```SortedArray```:
 
-You should notice that some of the spec examples are pending. Fill those
-in. Define the functionality for how methods like SortedArray#find ought
-to work in terms of spec examples.
+```
+arr = SortedArray.new([9,11,23,4,5,6,-10])
+while i < arr.length
+  puts arr[i]
+  i += 1
+end
 
-Bonus
+```
+
+Below is the output of the code:
+
+```
+-10
+4
+5
+6
+9
+11
+23
+```
+__NOTICE__ that the array is printed in sorted order.  Since our SortedArray class always maintains order.
+
+The objective is to implement the iterator methods in the sorted array class so that the tests pass.
+
+### Bonus
 
 Implement `SortedArray#inject`. See if you can get it to work exactly
 like `Array#inject`. 
